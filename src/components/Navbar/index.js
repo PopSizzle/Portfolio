@@ -1,10 +1,24 @@
 import React from 'react';
-import AppBar from '@material-ui/core/Button';
 
 function Navbar() {
 return(
-  <AppBar position="static">
-  </AppBar>
+  <div>
+    <nav className='navbar navbar-expand-lg text-center'>
+      <div className='collapse navbar-collapse' id='navDropdown'>
+        <ul className='navbar-nav'>
+          <li className='nav-item active'>
+            <a className='navlink' href='/about'>About</a>
+          </li>
+          <li className='nav-item'>
+            <a className='nav-link' href='/portfolio'>Portfolio</a>
+          </li>
+          <li className='nav-item'>
+            <a className='nav-link' href='/resume'>Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 )
 }
 
